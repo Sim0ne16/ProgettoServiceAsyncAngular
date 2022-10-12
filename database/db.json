@@ -1,0 +1,24 @@
+{
+  "Pops": [
+    {
+      "id": 1,
+      "name": "PrimoRIP",
+      "strength": 15
+    },
+    {
+      "id": 2,
+      "name": "pippa",
+      "strength": 6
+    },
+    {
+      "id": 3,
+      "name": "pippe",
+      "strength": 7
+    },
+    {
+      "id": 4,
+      "name": "Ciao",
+      "strength": 123
+    }
+  ]
+}

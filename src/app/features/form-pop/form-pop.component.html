@@ -1,0 +1,22 @@
+
+<form  *ngIf="form" [formGroup]="form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input type="text" matInput id="name" formControlName="name"  placeholder="...">
+    <mat-error *ngIf="form.get('name')?.hasError('required')">
+      Il campo nome è <strong>richiesto</strong>
+    </mat-error>
+  </mat-form-field>
+
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Forza</mat-label>
+    <input type="number" matInput id="strength" formControlName="strength"  placeholder="...">
+    <mat-error *ngIf="form.get('strength')?.hasError('required')">
+      Il campo forza è <strong>richiesto</strong>
+    </mat-error>
+  </mat-form-field>
+
+
+    <button id="submit" mat-stroked-button (click)="addPop()" >Invia</button>
+</form>

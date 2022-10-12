@@ -1,0 +1,26 @@
+#popCards{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+
+.mat-list-item{
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.mat-list-base .mat-list-item{
+  height: 30px;
+  margin-bottom:10px;
+}
+
+.mat-card-content{
+  margin-bottom:10px;
+}
+
+
+.example-card {
+  max-width: 230px;
+  margin:50px;
+}
+

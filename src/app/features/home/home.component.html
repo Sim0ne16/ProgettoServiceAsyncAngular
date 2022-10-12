@@ -1,0 +1,30 @@
+<div *ngIf="Pops" id="popCards">
+  <div id="wrapper" *ngFor="let pop of Pops;let i=index">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+
+        <mat-card-title>{{pop.name}}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <mat-list>
+          <div mat-subheader>Info</div>
+          <mat-list-item>
+            <div mat-line>Id:  {{pop.id}}</div>
+          </mat-list-item>
+          <mat-list-item>
+            <div mat-line>Strengths:  {{pop.strength}}</div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-card-content>
+      <mat-card-actions>
+
+        <button mat-button (click)="deletePop(pop.id)">Elimina</button>
+        <button mat-button (click)="modifyPop(pop.id)">Modifica</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<button mat-button routerLink="form-add">Aggiungi pop</button>
